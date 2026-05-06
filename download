@@ -1,16 +1,9 @@
-# Practice Tracker
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 
-A personal CRM for tracking healthcare practices, providers, outreach activity, and orders.
-
-Built with React + Vite. Data is stored in your browser's `localStorage`.
-
-## Local development (optional, only if you want to run it on your computer)
-
-```
-npm install
-npm run dev
-```
-
-## Deploying
-
-This is set up to deploy to Vercel with zero configuration. Just import the repo on Vercel and click Deploy.
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
